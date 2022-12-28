@@ -5,7 +5,7 @@ import Layout from '@/views/Layout'
 function App () {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <Routes>
           <Route index element={<Layout/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
