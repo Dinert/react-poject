@@ -1,11 +1,18 @@
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Login from '@/views/Login'
+import Layout from '@/views/Layout'
 
-
-function App() {
+function App () {
   return (
-    <div className="App">
-      App
-    </div>
-  );
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route index element={<Layout/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
